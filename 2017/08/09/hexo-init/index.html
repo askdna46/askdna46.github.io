@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Break the crystal">
 <meta property="og:description" content="HexoのインストールGitのインストール 下記のサイトから最新版のexeファイルをダウンロードしインストールhttp://git-scm.com/  Gitのプロキシ設定を行う 12git config --global http.proxy  http://username:password@proxy.example.com:8080git config --global https.pro">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-08-09T08:42:33.399Z">
+<meta property="og:updated_time" content="2017-08-14T04:13:01.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo環境構築">
 <meta name="twitter:description" content="HexoのインストールGitのインストール 下記のサイトから最新版のexeファイルをダウンロードしインストールhttp://git-scm.com/  Gitのプロキシ設定を行う 12git config --global http.proxy  http://username:password@proxy.example.com:8080git config --global https.pro">
@@ -364,7 +364,14 @@
 <h2 id="ブログの作成"><a href="#ブログの作成" class="headerlink" title="ブログの作成"></a>ブログの作成</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init myblog</div></pre></td></tr></table></figure>
 <h2 id="ブログの設定"><a href="#ブログの設定" class="headerlink" title="ブログの設定"></a>ブログの設定</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd .\myblog</div><div class="line">notepad _config.yml</div></pre></td></tr></table></figure>
 <p>最低限編集するのは、url:とroot:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">url: http://example.com</div><div class="line">root: /blog/</div></pre></td></tr></table></figure></p>
-<h2 id="記事の作成"><a href="#記事の作成" class="headerlink" title="記事の作成"></a>記事の作成</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo new post-name</div><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<h2 id="記事の作成"><a href="#記事の作成" class="headerlink" title="記事の作成"></a>記事の作成</h2><ol>
+<li><p>記事の作成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new post-name</div></pre></td></tr></table></figure>
+</li>
+<li><p>記事の編集</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">notepad .\source\_posts\post-name.md</div></pre></td></tr></table></figure>
+</li>
+</ol>
 <h2 id="ローカルサーバでの動作確認"><a href="#ローカルサーバでの動作確認" class="headerlink" title="ローカルサーバでの動作確認"></a>ローカルサーバでの動作確認</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
 <p>ブラウザから以下のURLにアクセスする<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://localhost:4000</div></pre></td></tr></table></figure></p>
 <h2 id="GitHubへのデプロイ"><a href="#GitHubへのデプロイ" class="headerlink" title="GitHubへのデプロイ"></a>GitHubへのデプロイ</h2><p>アカウントは取得しておく。<br>次のコマンドを入力してGitHub Pagesへの出力を可能にするプラグインをインストール。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
@@ -413,6 +420,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/14/sample/" rel="prev" title="sample">
+                sample <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -489,7 +500,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -511,7 +522,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">tags</span>
               
             </div>
