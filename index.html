@@ -332,6 +332,9 @@
 <p>各オプションの意味。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">-o:出力ファイル</div><div class="line">-A:ユーザエージェント</div><div class="line">--data-urlencode:HTTP URL エンコードを行いデータをポスト</div></pre></td></tr></table></figure></p>
 <p>クエリの実行間隔は0.6～1secぐらい空けるとよいらしい。<br>取得に失敗した場合は再実行するようにする。</p>
 <h3 id="jsonファイルの整形"><a href="#jsonファイルの整形" class="headerlink" title="jsonファイルの整形"></a>jsonファイルの整形</h3><p>たぶんこんな感じでjqで整形可能。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cat filename | jq &apos;.meta&apos;</div><div class="line">cat filename | jq &apos;.data&apos;</div></pre></td></tr></table></figure></p>
+<p>jqの使用例などは、次を参照しました。<br><a href="http://dev.classmethod.jp/tool/road-to-jq-master-apprentice/" target="_blank" rel="external">jqを活用してAPIレスポンス等から欲しい情報だけを抽出する【中級編】</a></p>
+<p>windows上のviewerはjson viewerを利用。</p>
+<p>あまり関係ないが、mdファイルの編集にはatomを使用。</p>
 
           
         
